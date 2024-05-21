@@ -13,6 +13,8 @@ body {
 @media (max-width: 900px) {
     body {
         padding: 2%;
+        box-sizing: border-box;
+        align-items: center;
     }
     .contacts {
         margin-top: 0;
