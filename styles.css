@@ -151,7 +151,7 @@ body {
 
 .tag {
     flex-grow: 1;
-    max-width: 20%;
+    max-width: 40%;
     object-fit: contain;
     border-radius: 5px;
     /*overflow: hidden;*/
