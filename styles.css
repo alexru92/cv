@@ -1,9 +1,6 @@
 body {
     padding: 0 25vw;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0;
 }
 
