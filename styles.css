@@ -77,7 +77,7 @@ body {
 }
 
 .name {
-    min-width: 50%;
+    min-width: 100%;
     font-size: 2em;
     white-space: nowrap;
     font-family: 'Ubuntu+Sans+Mono', monospace;
@@ -87,7 +87,7 @@ body {
 }
 
 .jobtitle {
-    min-width: 50%;
+    min-width: 100%;
     font-size: 1.5em;
     white-space: nowrap;
     font-family: 'Ubuntu+Sans+Mono', monospace;
@@ -161,7 +161,7 @@ body {
 
 .tag {
     flex-grow: 1;
-    max-width: 70%;
+    max-width: 20%;
     min-width: 10%;
     object-fit: contain;
     border-radius: 5px;
@@ -174,7 +174,7 @@ body {
 
 .language {
     flex-grow: 1;
-    max-width: 50%;
+    max-width: 20%;
     min-width: 10%;
     object-fit: contain;
     border-radius: 5px;
