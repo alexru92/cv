@@ -163,7 +163,7 @@ body {
 
 .language {
     flex-grow: 1;
-    max-width: 20%;
+    max-width: 35%;
     object-fit: contain;
     border-radius: 5px;
     padding: 0.2em 0.6em 0.2em 0.6em;
@@ -212,7 +212,7 @@ body {
     font-size: 1em;
     font-family: 'Ubuntu+Sans+Mono', monospace;
     margin-bottom: 1%;
-    min-width: 70%;
+    min-width: 100%;
 }
 
 .common {
@@ -255,8 +255,7 @@ body {
 }
 
 .description {
-    max-width: 95%;
-    min-width: 70%;
+    width: 100%;
     text-align: justify;
     font-size: 0.95em;
     padding: 0;
