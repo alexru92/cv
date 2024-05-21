@@ -163,7 +163,6 @@ body {
 
 .language {
     flex-grow: 1;
-    max-width: 35%;
     object-fit: contain;
     border-radius: 5px;
     padding: 0.2em 0.6em 0.2em 0.6em;
