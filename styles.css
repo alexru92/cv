@@ -12,7 +12,7 @@ body {
 
 @media (max-width: 900px) {
     body {
-        padding: 1%;
+        padding: 2%;
     }
     .contacts {
         margin-top: 0;
