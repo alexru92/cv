@@ -159,8 +159,8 @@ body {
 
 .tag {
     flex-grow: 1;
-    max-width: 80%;
-    min-width: 20%;
+    max-width: 70%;
+    min-width: 10%;
     object-fit: contain;
     border-radius: 5px;
     /*overflow: hidden;*/
@@ -172,8 +172,8 @@ body {
 
 .language {
     flex-grow: 1;
-    max-width: 80%;
-    min-width: 20%;
+    max-width: 50%;
+    min-width: 10%;
     object-fit: contain;
     border-radius: 5px;
     padding: 0.2em 0.6em 0.2em 0.6em;
