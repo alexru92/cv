@@ -1,6 +1,6 @@
 function unblur() {
     const data = {
-        linkedin: '>a/<iteixa/ni/moc.nideknil>"/iteixa/ni/moc.nideknil"=ferh a< >/ "gnp.nideknil/segami"=crs "noci"=ssalc gmi<',
+        linkedin: '>a/<iteixa/ni/moc.nideknil>"/iteixa/ni/moc.nideknil/:sptth"=ferh a< >/ "gnp.nideknil/segami"=crs "noci"=ssalc gmi<',
         email: '>a/<moc.kooltuo@drayella> "moc.kooltuo@drayella:otliam"=ferh a< >/ "gnp.liame/segami"=crs "noci"=ssalc gmi<',
         phone: '586 2180 )7151( 94+>/ "gnp.elibom/segami"=crs "noci"=ssalc gmi<'
     };
