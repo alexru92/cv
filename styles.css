@@ -16,20 +16,13 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .contacts {
-        margin-top: 0;
-        max-width: none;
-    }
-    .info {
-        flex-direction: column;
-    }
 }
 
 @media print {
     body {
         margin: 0;
         padding: 0;
-        zoom: 64%;
+        zoom: 65%;
     }
 
     .page {
@@ -76,6 +69,12 @@ body {
     width: 80%;
 }
 
+@media (max-width: 1000px) {
+    .info {
+        flex-direction: column;
+    }
+}
+
 .name {
     min-width: 100%;
     font-size: 2em;
@@ -113,6 +112,13 @@ body {
     justify-content: flex-end;
     max-width: 400px;
     min-width: 220px;
+}
+
+@media (max-width: 900px) {
+    .contacts {
+        margin-top: 0;
+        max-width: none;
+    }
 }
 
 .education {
