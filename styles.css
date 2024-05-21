@@ -1,0 +1,309 @@
+body {
+    padding: 0 25vw;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.delimiter {
+    border: 1px solid #0076FF;
+    height: 0;
+    margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+    .contacts {
+        margin-top: 0;
+        max-width: none;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        zoom: 66%;
+    }
+
+    .page {
+        page-break-after: always;
+        border: 1px solid black;
+        padding: 1cm;
+    }
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-start;
+    height: 25%;
+    width: 25%;
+    padding: 0;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.photo > img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 3px solid #0076FF;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.header {
+    font-size: 1em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3% 0 0 0;
+}
+
+.info {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.name {
+    font-size: 2em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.jobtitle {
+    font-size: 1.5em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #0076FF;
+    font-weight: bold;
+}
+
+.contactshelper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.contacts {
+    font-size: 1em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 400px;
+    min-width: 220px;
+}
+
+.education {
+    margin-bottom: 3%;
+}
+
+.icon {
+    max-height: 25px;
+    max-width: 25px;
+    margin-right: 2%;
+}
+
+.home, .phone, .email, .github, .leetcode, .linkedin, .thispage {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Отцентрировать по вертикали и горизонтали */
+}
+
+.summary {
+    font-size: 1em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    justify-content: flex-start;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.summary > span {
+    font-weight: bold;
+}
+
+.subheader {
+    font-size: 1.2em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    color: #0076FF;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.tagscloud, .languages {
+    font-size: 1em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.tag {
+    flex-grow: 1;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    /*overflow: hidden;*/
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.language {
+    flex-grow: 1;
+    max-width: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    /*overflow: hidden;*/
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.withmargin {
+    margin-bottom: 1%;
+}
+
+.important{
+    background-color: #0076FF;
+    border: 1px solid #0076FF;
+}
+
+.notimportant{
+    background-color: #7FBAFF;
+    border: 1px solid #7FBAFF;
+}
+
+.tag > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rus {
+    background: linear-gradient(to right, #7FBAFF 0%, #7FBAFF 100%, transparent 0%, transparent 100%);
+}
+
+.eng {
+    background: linear-gradient(to right, #7FBAFF 0%, #7FBAFF 75%, transparent 0%, transparent 100%);
+}
+
+.ger {
+    background: linear-gradient(to right, #7FBAFF 0%, #7FBAFF 75%, transparent 0%, transparent 100%);
+}
+
+.place {
+    font-size: 1em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    margin-bottom: 1%;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+.common {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.companyicon {
+    max-height: 50px;
+    max-width: 50px;
+    margin-right: 1%;
+}
+
+.role {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.company > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.period {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #0076FF;
+}
+
+.description {
+    width: 100%;
+    text-align: justify;
+    font-size: 0.95em;
+    margin-left: 1%;
+}
+
+.stack {
+    margin-left: 1%;
+    color: #0076FF;
+    font-size: 0.9em;
+}
+
+.blured {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 10em;
+    max-width: 15em;
+    width: 250%;
+    background-color: rgba(255, 255, 255, 0.90);
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #0076FF;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
