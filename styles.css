@@ -1,6 +1,9 @@
 body {
     padding: 0 25vw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
 }
 
@@ -12,9 +15,10 @@ body {
 
 @media (max-width: 900px) {
     body {
-        padding: 2%;
-        margin: auto auto;
-        box-sizing: border-box;
+        padding: 3%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .contacts {
