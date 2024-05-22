@@ -22,7 +22,7 @@ body {
     body {
         margin: 0;
         padding: 0;
-        zoom: 65%;
+        zoom: 75%;
     }
 
     .page {
@@ -54,8 +54,15 @@ body {
     overflow: hidden;
     aspect-ratio: 1/1;
     flex: 0 1 auto;
-    margin-right: 3pt;
-    margin-bottom: 3pt;
+    margin-right: 10pt;
+    margin-bottom: 10pt;
+}
+
+@media (max-width: 900pt) {
+    photo {
+        margin-right: 5pt;
+        margin-bottom: 5pt;
+    }
 }
 
 .photo > img {
