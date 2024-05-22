@@ -1,5 +1,5 @@
 body {
-    padding: 0 25vw;
+    padding: 10pt 25vw;
     box-sizing: border-box;
     margin: 0;
     overflow-x: hidden;
@@ -8,17 +8,13 @@ body {
 .delimiter {
     border: 1px solid #0076FF;
     height: 0;
-    margin: 5px 0;
+    margin: 2pt 0;
 }
 
 @media (max-width: 900pt) {
     body {
-        padding: 0 2vw;
+        padding: 10pt 10pt;
         overflow-x: hidden;
-    }
-    .contacts {
-        margin-top: 0;
-        max-width: 100%;
     }
 }
 
@@ -36,17 +32,30 @@ body {
     }
 }
 
+.header {
+    font-size: 1em;
+    font-family: 'Ubuntu+Sans+Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .photo {
     display: flex;
     justify-content: flex-start;
-    height: 25%;
-    width: 25%;
     padding: 0;
     max-width: 120pt;
     max-height: 120pt;
     min-width: 80pt;
     min-height: 80pt;
+    width: 50%;
+    height: 50%;
     overflow: hidden;
+    aspect-ratio: 1/1;
+    flex: 0 1 auto;
+    margin-right: 3pt;
+    margin-bottom: 3pt;
 }
 
 .photo > img {
@@ -59,24 +68,23 @@ body {
     padding: 0;
 }
 
-.header {
-    font-size: 1em;
-    font-family: 'Ubuntu+Sans+Mono', monospace;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 5pt 0 0 0;
-}
-
 .info {
-    margin-left: 3%;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    width: 80%;
+    height: min-content;
+    min-width: 177pt;
+    flex: 1;
+    margin-right: 3pt;
 }
+
+@media (max-width: 900pt) {
+    .info{
+        min-width: 120pt;
+    }
+}
+
 .name {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Ubuntu+Sans+Mono', monospace;
     display: flex;
     flex-direction: row;
@@ -84,7 +92,7 @@ body {
 }
 
 .jobtitle {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Ubuntu+Sans+Mono', monospace;
     display: flex;
     flex-direction: row;
@@ -93,31 +101,28 @@ body {
     font-weight: bold;
 }
 
-.contactshelper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-}
-
 .contacts {
+    flex: 0 1 auto;
     font-size: 1em;
     font-family: 'Ubuntu+Sans+Mono', monospace;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    max-width: 400px;
-    min-width: 220px;
+    width: 25%;
+    min-width: min-content;
+    margin-left: auto;
+    margin-top: auto;
 }
 
-.education {
-    margin-bottom: 3%;
+@media (max-width: 900pt) {
+    .contacts {
+        max-width: 100%;
+    }
 }
 
 .icon {
-    max-height: 25px;
-    max-width: 25px;
-    margin-right: 2%;
+    max-height: 15pt;
+    max-width: 15pt;
+    margin-right: 2pt;
 }
 
 .home, .phone, .email, .github, .leetcode, .linkedin, .thispage {
@@ -126,8 +131,7 @@ body {
     align-items: center;
 }
 
-.header, .info, .summary, .tagscloud, .languages {
-    width: 100%;
+.header, .summary, .tagscloud, .languages, .info, .tag, .language {
     box-sizing: border-box;
 }
 
@@ -168,7 +172,6 @@ body {
     padding: 0.2em 0.6em 0.2em 0.6em;
     text-align: center;
     color: white;
-    box-sizing: border-box;
 }
 
 .language {
@@ -178,7 +181,6 @@ body {
     padding: 0.2em 0.6em 0.2em 0.6em;
     text-align: center;
     color: white;
-    box-sizing: border-box;
 }
 
 .withmargin {
