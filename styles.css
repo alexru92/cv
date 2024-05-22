@@ -126,7 +126,7 @@ body {
     align-items: center;
 }
 
-.header, .info, .contacts, .summary, .tagscloud, .languages {
+.header, .info, .summary, .tagscloud, .languages {
     width: 100%;
     box-sizing: border-box;
 }
