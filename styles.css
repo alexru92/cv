@@ -2,6 +2,7 @@ body {
     padding: 0 25vw;
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .delimiter {
@@ -10,13 +11,14 @@ body {
     margin: 5px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900pt) {
     body {
-        padding: 5pt 5pt 5pt 5pt;
+        padding: 0 2vw;
+        overflow-x: hidden;
     }
     .contacts {
         margin-top: 0;
-        max-width: none;
+        max-width: 100%;
     }
 }
 
@@ -30,7 +32,7 @@ body {
     .page {
         page-break-after: always;
         border: 1px solid black;
-        padding: 1cm;
+        padding: 0;
     }
 }
 
@@ -40,8 +42,11 @@ body {
     height: 25%;
     width: 25%;
     padding: 0;
-    max-width: 180px;
-    max-height: 180px;
+    max-width: 120pt;
+    max-height: 120pt;
+    min-width: 80pt;
+    min-height: 80pt;
+    overflow: hidden;
 }
 
 .photo > img {
@@ -60,7 +65,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 3% 0 0 0;
+    padding: 5pt 0 0 0;
 }
 
 .info {
@@ -119,6 +124,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.header, .info, .contacts, .summary, .tagscloud, .languages {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .summary {
