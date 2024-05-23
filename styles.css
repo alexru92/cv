@@ -2,7 +2,7 @@ body {
     padding: 10pt 25vw;
     box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .delimiter {
@@ -14,7 +14,7 @@ body {
 @media (max-width: 900pt) {
     body {
         padding: 10pt 10pt;
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
     }
 }
 
@@ -138,7 +138,7 @@ body {
     align-items: center;
 }
 
-.header, .summary, .tagscloud, .languages, .info, .tag, .language {
+.header, .skills, .summary, .tagscloud, .languages, .info, .tag, .language {
     box-sizing: border-box;
 }
 
@@ -167,7 +167,11 @@ body {
     font-family: 'Ubuntu+Sans+Mono', monospace;
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
+    gap: 5pt;
+}
+
+.languages {
+    margin-top: 5pt;
 }
 
 .tag {
@@ -179,19 +183,6 @@ body {
     padding: 0.2em 0.6em 0.2em 0.6em;
     text-align: center;
     color: white;
-}
-
-.language {
-    flex-grow: 1;
-    object-fit: contain;
-    border-radius: 5px;
-    padding: 0.2em 0.6em 0.2em 0.6em;
-    text-align: center;
-    color: white;
-}
-
-.withmargin {
-    margin-bottom: 1%;
 }
 
 .important{
@@ -229,8 +220,8 @@ body {
 .place {
     font-size: 1em;
     font-family: 'Ubuntu+Sans+Mono', monospace;
-    margin-bottom: 1%;
-    min-width: 100%;
+    margin-bottom: 5pt;
+    width: 100%;
 }
 
 .common {
@@ -242,7 +233,7 @@ body {
 .companyicon {
     max-height: 50px;
     max-width: 50px;
-    margin-right: 1%;
+    margin-right: 5pt;
 }
 
 .role {
@@ -280,7 +271,6 @@ body {
 }
 
 .stack {
-    margin-left: 1%;
     color: #0076FF;
     font-size: 0.9em;
 }
@@ -290,31 +280,39 @@ body {
     transition: filter 0.3s ease;
 }
 
-.tooltip .tooltiptext {
+.tooltiptext, .tooltiptextcompany {
     visibility: hidden;
-    min-width: 10em;
-    max-width: 15em;
-    width: 250%;
     background-color: rgba(255, 255, 255, 0.90);
     color: #000;
     font-weight: bold;
     border: 1px solid #0076FF;
     text-align: left;
     border-radius: 5px;
-    padding: 10px;
+    padding: 2pt;
     position: absolute;
     z-index: 1;
     bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
+    overflow: hidden;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltiptextcompany {
+    min-width: 200pt;
+    max-width: 260pt;
+    width: fit-content;
+}
+
+.tooltiptext {
+    width: 0;
+    transform: translateX(-10pt);
+}
+
+.tooltip:hover > .tooltiptext, .tooltip:hover > .tooltiptextcompany {
     visibility: visible;
     opacity: 1;
 }
+
 .tooltip {
     position: relative;
     display: inline-block;
