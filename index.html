@@ -363,7 +363,7 @@
                         tooltipText.style.left = '9pt';
                         tooltipText.style.right = 'auto';
                     }
-
+                    tooltipText.style.visibility= 'visible';
                 });
 
                 tooltip.addEventListener('mouseleave', function() {
@@ -372,6 +372,7 @@
                     tooltipText.style.width = '0';
                     tooltipText.style.minWidth = '0';
                     tooltipText.style.maxWidth = '0';
+                    transform: translateX(-10pt);
                     tooltipText.style.visibility= 'hidden';
                 });
             });
