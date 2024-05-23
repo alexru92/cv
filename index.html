@@ -338,62 +338,6 @@
         </div>
     </div>
     <script src="script.js"></script>
-<!--    <script>-->
-<!--        document.addEventListener('DOMContentLoaded', function() {-->
-<!--            const tooltips = document.querySelectorAll('.tooltip');-->
-
-<!--            // Функция для корректировки позиции и ширины tooltip-->
-<!--            function adjustTooltip(tooltipText) {-->
-<!--                // Устанавливаем начальные размеры для корректного расчета-->
-<!--                tooltipText.style.width = 'fit-content';-->
-<!--                tooltipText.style.minWidth = '180pt';-->
-<!--                tooltipText.style.maxWidth = '250pt';-->
-<!--                tooltipText.style.visibility = 'hidden';-->
-<!--                tooltipText.style.opacity = '0';-->
-<!--                tooltipText.style.display = 'block';-->
-
-<!--                // Получаем фактическую ширину-->
-<!--                const rect = tooltipText.getBoundingClientRect();-->
-<!--                const viewportWidth = window.innerWidth;-->
-
-<!--                // Проверка выхода за правую границу-->
-<!--                if (rect.right > viewportWidth) {-->
-<!--                    tooltipText.style.left = 'auto';-->
-<!--                    tooltipText.style.right = '0';-->
-<!--                } else {-->
-<!--                    tooltipText.style.left = '-8pt';-->
-<!--                    tooltipText.style.right = 'auto';-->
-<!--                }-->
-
-<!--                // Проверка выхода за левую границу-->
-<!--                if (rect.left < 0) {-->
-<!--                    tooltipText.style.left = '0';-->
-<!--                    tooltipText.style.right = 'auto';-->
-<!--                }-->
-
-<!--                // Скрываем tooltip после корректировки-->
-<!--                tooltipText.style.visibility = 'hidden';-->
-<!--                tooltipText.style.opacity = '0';-->
-<!--                tooltipText.style.display = 'none';-->
-<!--            }-->
-
-<!--            // Корректировка позиции при наведении курсора-->
-<!--            tooltips.forEach(tooltip => {-->
-<!--                const tooltipText = tooltip.querySelector('.tooltiptext');-->
-
-<!--                tooltip.addEventListener('mouseenter', function() {-->
-<!--                    adjustTooltip(tooltipText);-->
-<!--                    tooltipText.style.visibility = 'visible';-->
-<!--                    tooltipText.style.opacity = '1';-->
-<!--                });-->
-
-<!--                tooltip.addEventListener('mouseleave', function() {-->
-<!--                    tooltipText.style.visibility = 'hidden';-->
-<!--                    tooltipText.style.opacity = '0';-->
-<!--                });-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const tooltips = document.querySelectorAll('.tooltip');
