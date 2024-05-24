@@ -1,5 +1,5 @@
 body {
-    padding: 10pt 25vw;
+    padding: 10px 25vw;
     box-sizing: border-box;
     margin: 0;
     /*overflow-x: hidden;*/
@@ -8,12 +8,12 @@ body {
 .delimiter {
     border: 1px solid #0076FF;
     height: 0;
-    margin: 2pt 0;
+    margin: 2px 0 5px 0;
 }
 
-@media (max-width: 900pt) {
+@media (max-width: 900px) {
     body {
-        padding: 10pt 10pt;
+        padding: 10px 10px;
         /*overflow-x: hidden;*/
     }
 }
@@ -22,7 +22,7 @@ body {
     body {
         margin: 0;
         padding: 0;
-        zoom: 75%;
+        zoom: 66%;
     }
 
     .page {
@@ -45,23 +45,23 @@ body {
     display: flex;
     justify-content: flex-start;
     padding: 0;
-    max-width: 120pt;
-    max-height: 120pt;
-    min-width: 80pt;
-    min-height: 80pt;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 80px;
+    min-height: 80px;
     width: 50%;
     height: 50%;
     overflow: hidden;
     aspect-ratio: 1/1;
     flex: 0 1 auto;
-    margin-right: 10pt;
-    margin-bottom: 10pt;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 900pt) {
+@media (max-width: 900px) {
     photo {
-        margin-right: 5pt;
-        margin-bottom: 5pt;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
 }
 
@@ -79,14 +79,14 @@ body {
     display: flex;
     flex-direction: column;
     height: min-content;
-    min-width: 177pt;
+    min-width: 177px;
     flex: 1;
-    margin-right: 3pt;
+    margin-right: 3px;
 }
 
-@media (max-width: 900pt) {
+@media (max-width: 900px) {
     .info{
-        min-width: 120pt;
+        min-width: 120px;
     }
 }
 
@@ -120,16 +120,16 @@ body {
     margin-top: auto;
 }
 
-@media (max-width: 900pt) {
+@media (max-width: 900px) {
     .contacts {
         max-width: 100%;
     }
 }
 
 .icon {
-    max-height: 15pt;
-    max-width: 15pt;
-    margin-right: 2pt;
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 2px;
 }
 
 .home, .phone, .email, .github, .leetcode, .linkedin, .thispage {
@@ -167,11 +167,11 @@ body {
     font-family: 'Ubuntu+Sans+Mono', monospace;
     display: flex;
     flex-wrap: wrap;
-    gap: 5pt;
+    gap: 5px;
 }
 
 .languages {
-    margin-top: 5pt;
+    margin-top: 5px;
 }
 
 .tag {
@@ -220,7 +220,7 @@ body {
 .place {
     font-size: 1em;
     font-family: 'Ubuntu+Sans+Mono', monospace;
-    margin-bottom: 5pt;
+    margin-bottom: 5px;
     width: 100%;
 }
 
@@ -233,7 +233,7 @@ body {
 .companyicon {
     max-height: 50px;
     max-width: 50px;
-    margin-right: 5pt;
+    margin-right: 5px;
 }
 
 .role {
@@ -288,7 +288,7 @@ body {
     border: 1px solid #0076FF;
     text-align: left;
     border-radius: 5px;
-    padding: 2pt;
+    padding: 2px;
     position: absolute;
     z-index: 1;
     bottom: 150%;
@@ -296,17 +296,9 @@ body {
     transition: opacity 0.3s;
     overflow: hidden;
     display: none;
-}
-
-.tooltiptextcompany {
-    min-width: 200pt;
-    max-width: 260pt;
-    width: fit-content;
-}
-
-.tooltiptext {
-    width: 0;
-    transform: translateX(-10pt);
+    min-width: 120px;
+    max-width: 250px;
+    width: max-content;
 }
 
 .tooltip:hover > .tooltiptext, .tooltip:hover > .tooltiptextcompany {

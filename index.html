@@ -350,10 +350,6 @@
                     const viewportWidth = window.innerWidth;
                     const rightPos = rect.right
 
-                    tooltipText.style.width = 'fit-content';
-                    tooltipText.style.minWidth = '180px';
-                    tooltipText.style.maxWidth = '250px';
-
                     if (rightPos >= viewportWidth - 250 ) {
                         tooltipText.style.left = 'auto';
                         tooltipText.style.right = '0';
@@ -363,17 +359,11 @@
                         tooltipText.style.left = '9pt';
                         tooltipText.style.right = 'auto';
                     }
-                    tooltipText.style.visibility= 'visible';
                 });
 
                 tooltip.addEventListener('mouseleave', function() {
-                    tooltipText.style.left = '-8pt';
+                    tooltipText.style.left = '-8px';
                     tooltipText.style.right = 'auto';
-                    tooltipText.style.width = '0';
-                    tooltipText.style.minWidth = '0';
-                    tooltipText.style.maxWidth = '0';
-                    tooltipText.style.transform= 'translateX(-10pt)';
-                    tooltipText.style.visibility= 'hidden';
                 });
             });
         });
