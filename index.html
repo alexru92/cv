@@ -350,7 +350,7 @@
                     const viewportWidth = window.innerWidth;
                     const rightPos = rect.right;
 
-                    if (rightPos >= viewportWidth - 25) {
+                    if (rightPos > viewportWidth - 25) {
                         tooltipText.style.transform= 'translateX(-' + (rightPos - viewportWidth + 25) + 'px)';
                     }
                 });
