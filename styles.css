@@ -11,7 +11,7 @@ body {
     margin: 2px 0 5px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     body {
         padding: 10px 10px;
         /*overflow-x: hidden;*/
@@ -179,10 +179,16 @@ body {
     max-width: 40%;
     object-fit: contain;
     border-radius: 5px;
-    /*overflow: hidden;*/
-    padding: 0.2em 0.6em 0.2em 0.6em;
+    line-height: 1.5;
     text-align: center;
     color: white;
+}
+
+.tag::before,
+.tag::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
 }
 
 .important{
@@ -281,20 +287,16 @@ body {
 }
 
 .tooltiptext, .tooltiptextcompany {
-    visibility: hidden;
     background-color: rgba(255, 255, 255, 0.90);
     color: #000;
     font-weight: bold;
     border: 1px solid #0076FF;
     text-align: left;
     border-radius: 5px;
-    padding: 2px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
     bottom: 150%;
-    opacity: 0;
-    transition: opacity 0.3s;
-    overflow: hidden;
     display: none;
     min-width: 120px;
     max-width: 250px;
@@ -302,8 +304,6 @@ body {
 }
 
 .tooltip:hover > .tooltiptext, .tooltip:hover > .tooltiptextcompany {
-    visibility: visible;
-    opacity: 1;
     display: block;
 }
 

@@ -348,22 +348,11 @@
                 tooltip.addEventListener('mouseenter', function() {
                     const rect = tooltipText.getBoundingClientRect();
                     const viewportWidth = window.innerWidth;
-                    const rightPos = rect.right
+                    const rightPos = rect.right;
 
-                    if (rightPos >= viewportWidth - 250 ) {
-                        tooltipText.style.left = 'auto';
-                        tooltipText.style.right = '0';
-                        const width = tooltipText.getBoundingClientRect().width;
-                        tooltipText.style.transform= 'translateX(-' + (rightPos + width - viewportWidth + 39) + 'px)';
-                    } else {
-                        tooltipText.style.left = '9pt';
-                        tooltipText.style.right = 'auto';
+                    if (rightPos >= viewportWidth - 25) {
+                        tooltipText.style.transform= 'translateX(-' + (rightPos - viewportWidth + 25) + 'px)';
                     }
-                });
-
-                tooltip.addEventListener('mouseleave', function() {
-                    tooltipText.style.left = '-8px';
-                    tooltipText.style.right = 'auto';
                 });
             });
         });
