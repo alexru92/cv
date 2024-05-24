@@ -345,39 +345,35 @@
             tooltips.forEach(tooltip => {
                 const tooltipText = tooltip.querySelector('.tooltiptext');
 
-                tooltip.addEventListener('pointerenter', function() {
-                    if (event.pointerType === 'mouse') {
-                        const rect = tooltipText.getBoundingClientRect();
-                        const viewportWidth = window.innerWidth;
-                        const rightPos = rect.right
+                tooltip.addEventListener('mouseenter', function() {
+                    const rect = tooltipText.getBoundingClientRect();
+                    const viewportWidth = window.innerWidth;
+                    const rightPos = rect.right
 
-                        tooltipText.style.width = 'fit-content';
-                        tooltipText.style.minWidth = '180pt';
-                        tooltipText.style.maxWidth = '250pt';
+                    tooltipText.style.width = 'fit-content';
+                    tooltipText.style.minWidth = '180pt';
+                    tooltipText.style.maxWidth = '250pt';
 
-                        if (rightPos >= viewportWidth - 250) {
-                            tooltipText.style.left = 'auto';
-                            tooltipText.style.right = '0';
-                            const width = tooltipText.getBoundingClientRect().width;
-                            tooltipText.style.transform = 'translateX(-' + (rightPos + width - viewportWidth + 39) + 'px)';
-                        } else {
-                            tooltipText.style.left = '9pt';
-                            tooltipText.style.right = 'auto';
-                        }
-                        tooltipText.style.visibility = 'visible';
+                    if (rightPos >= viewportWidth - 250 ) {
+                        tooltipText.style.left = 'auto';
+                        tooltipText.style.right = '0';
+                        const width = tooltipText.getBoundingClientRect().width;
+                        tooltipText.style.transform= 'translateX(-' + (rightPos + width - viewportWidth + 39) + 'px)';
+                    } else {
+                        tooltipText.style.left = '9pt';
+                        tooltipText.style.right = 'auto';
                     }
+                    tooltipText.style.visibility= 'visible';
                 });
 
-                tooltip.addEventListener('pointerleave', function() {
-                    if (event.pointerType === 'mouse') {
-                        tooltipText.style.left = '-8pt';
-                        tooltipText.style.right = 'auto';
-                        tooltipText.style.width = '0';
-                        tooltipText.style.minWidth = '0';
-                        tooltipText.style.maxWidth = '0';
-                        tooltipText.style.transform = 'translateX(-10pt)';
-                        tooltipText.style.visibility = 'hidden';
-                    }
+                tooltip.addEventListener('mouseleave', function() {
+                    tooltipText.style.left = '-8pt';
+                    tooltipText.style.right = 'auto';
+                    tooltipText.style.width = '0';
+                    tooltipText.style.minWidth = '0';
+                    tooltipText.style.maxWidth = '0';
+                    tooltipText.style.transform= 'translateX(-10pt)';
+                    tooltipText.style.visibility= 'hidden';
                 });
             });
         });

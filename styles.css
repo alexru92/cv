@@ -295,6 +295,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
     overflow: hidden;
+    display: none;
 }
 
 .tooltiptextcompany {
@@ -311,6 +312,7 @@ body {
 .tooltip:hover > .tooltiptext, .tooltip:hover > .tooltiptextcompany {
     visibility: visible;
     opacity: 1;
+    display: block;
 }
 
 .tooltip {
