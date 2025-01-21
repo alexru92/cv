@@ -216,7 +216,7 @@ body {
 }
 
 .eng {
-    background: linear-gradient(to right, #7FBAFF 0%, #000080 75%, transparent 0%, transparent 100%);
+    background: linear-gradient(to right, #000080 0%, #000080 75%, transparent 0%, transparent 100%);
 }
 
 .ger {
