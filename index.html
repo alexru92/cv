@@ -9,6 +9,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:regular,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:bold,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
+    <script>
+        function calculateYearsWithMonths(startYear, startMonth) {
+            const currentDate = new Date();
+            const currentYear = currentDate.getFullYear();
+            const currentMonth = currentDate.getMonth() + 1;
+
+            let years = currentYear - startYear;
+            let months = currentMonth - startMonth;
+
+            if (months < 0) {
+                years -= 1;
+                months += 12;
+            }
+            return { years, months };
+        }
+
+        function updateExperience() {
+            const qaExperience = calculateYearsWithMonths(2018, 4);
+            const automationExperience = calculateYearsWithMonths(2020, 9);
+
+            document.getElementById("summary").textContent = 
+                `Experienced engineer with over ${qaYears} years of background developing in quality assurance, with more than ${automationYears} years
+                dedicated to test automation using Groovy and Java, and a strong passion for development. Work permit: <span>Blaue Karte EU (§18g AufenthG)</span>.
+                Familiarity with the Software Development Life Cycle. Proficiency in using development tools. Expertise in CI/CD,
+                with practical experience in OpenShift. Experience working in agile methodologies (SCRUM, SAFe). Strong
+                problem-solving skills, ability to find compromises, a team player.`;
+        }
+
+        // Вызываем обновление текста при загрузке страницы
+        window.onload = updateExperience;
+    </script>
 </head>
 <body>
     <div class="header">
@@ -50,12 +81,6 @@
         </div>
     </div>
     <div class="summary">
-        Experienced engineer with over 6 years of background developing in quality assurance, with more than 3 years
-        dedicated to test automation using Groovy and Java, and a strong passion for development. Moved to Berlin
-        approximately one year ago. Work permit: <span>Blaue Karte EU (§18g AufenthG)</span>.
-        Familiarity with the Software Development Life Cycle. Proficiency in using development tools. Expertise in CI/CD,
-        with practical experience in OpenShift. Experience working in agile methodologies (SCRUM, SAFe). Strong
-        problem-solving skills, ability to find compromises, a team player.
     </div>
     <div class="skills">
         <div class="subheader">SKILL HIGHLIGHTS</div>
